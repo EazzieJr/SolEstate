@@ -7,4 +7,12 @@
   font-family: 'Graphik';
   font-weight: 200;
 }
+
+.bg-dark {
+  background-color: #101225;
+}
+
+.text-light {
+  color: #7895FF;
+}
 /*# sourceMappingURL=style.css.map */
