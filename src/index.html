@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SolEstate</title>
+    <link rel="stylesheet" href="public/styles/style.css">
+    <link rel="stylesheet" href="sass/style.scss">
+    <link rel="stylesheet" href="../font/graphik/stylesheet.css">
+</head>
+
+<body class="bg-body-pattern bg-no-repeat bg-cover">
+    <div class="container mx-auto px-7">
+        <nav>
+            <!-- Nav for small screens -->
+            <div class="nav-container py-4 display-flex justify-between items-center">
+                <div class="left-container">
+                    <!-- Logo -->
+                    <div class="logo">
+                        <svg class="w-16" width="82" height="22" viewBox="0 0 82 22" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M0.82 21H14.456V16.1H7.176V0.979999H0.82V21ZM25.9247 16.38C23.4047 16.38 21.8087 14.504 21.8087 11.088V10.864C21.8087 7.448 23.4047 5.628 25.8687 5.628C28.3887 5.628 30.0127 7.476 30.0127 10.864V11.088C30.0127 14.42 28.4167 16.38 25.9247 16.38ZM25.7567 21.364C32.3367 21.364 36.6207 17.192 36.6207 10.948V10.724C36.6207 4.396 32.0287 0.672 25.8687 0.672C19.8767 0.672 15.1727 4.704 15.1727 10.892V11.116C15.1727 17.192 19.2047 21.364 25.7567 21.364ZM48.4481 21.364C55.1681 21.364 58.4441 17.388 58.4441 12.404V9.828H48.8401V14H52.2561C52.1161 15.316 51.1641 16.548 48.6441 16.548C45.3961 16.548 44.4161 14.168 44.4161 11.228V11.004C44.4161 7.616 45.9561 5.656 48.4761 5.656C50.4361 5.656 51.4721 6.58 51.6961 8.232H57.9681C57.6321 2.884 53.3201 0.672 48.4481 0.672C42.3721 0.672 37.8081 4.76 37.8081 10.892V11.116C37.8081 17.136 41.5321 21.364 48.4481 21.364ZM70.3752 16.38C67.8552 16.38 66.2592 14.504 66.2592 11.088V10.864C66.2592 7.448 67.8552 5.628 70.3192 5.628C72.8392 5.628 74.4632 7.476 74.4632 10.864V11.088C74.4632 14.42 72.8672 16.38 70.3752 16.38ZM70.2072 21.364C76.7872 21.364 81.0712 17.192 81.0712 10.948V10.724C81.0712 4.396 76.4792 0.672 70.3192 0.672C64.3272 0.672 59.6232 4.704 59.6232 10.892V11.116C59.6232 17.192 63.6552 21.364 70.2072 21.364Z"
+                                fill="white" />
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="right-container">
+                    <div class="flex items-center lg:hidden">
+                        <p class="font-graphik hidden md:block text-white font-bold mr-7" onclick="openMenu()">
+                            MENU
+                        </p>
+                        <a href="#menu-btn">
+                            <div id="menu-btn" class="menu-btn p-1" onclick="openMenu()">
+                                <div class="menu-btn-burger rounded-sm rounded-l rounded-r">
+
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <section class="hero">
+            <!-- Hero container for mobile -->
+            <div class="hero-container text-center my-14">
+                <p class="hero-header font-graphik-light text-white text-3xl">
+                    A New Protocol for Non Fungible Intelligence
+                </p>
+
+                <p class="hero-details font-graphik-light mt-5 text-sm text-gray-300 text-center tracking-widest px-5">
+                    We resolved to build on the Solana blockchain because it processes transactions at an exceedingly
+                    faster rate than the
+                    Ethereum blockchain with about 50,000 transactions per second.
+                </p>
+
+                <div class="flex justify-center mt-3">
+                    <svg class="w-16" width="104" height="104" viewBox="0 0 104 104" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="52" cy="52" r="52" fill="url(#paint0_linear_9_173)" />
+                        <path
+                            d="M60 43.5H45.5C45.19 43.5 44.89 43.65 44.7 43.9L43.2 45.9C42.71 46.56 43.18 47.5 44 47.5H58.5C58.81 47.5 59.11 47.35 59.3 47.1L60.8 45.1C61.29 44.44 60.82 43.5 60 43.5Z"
+                            fill="white" />
+                        <path
+                            d="M44 50H58.5C58.81 50 59.11 50.15 59.3 50.4L60.8 52.4C61.29 53.06 60.82 54 60 54H45.5C45.19 54 44.89 53.85 44.7 53.6L43.2 51.6C42.71 50.94 43.18 50 44 50Z"
+                            fill="white" />
+                        <path
+                            d="M60 56.5H45.5C45.19 56.5 44.89 56.65 44.7 56.9L43.2 58.9C42.71 59.56 43.18 60.5 44 60.5H58.5C58.81 60.5 59.11 60.35 59.3 60.1L60.8 58.1C61.29 57.44 60.82 56.5 60 56.5Z"
+                            fill="white" />
+                        <defs>
+                            <linearGradient id="paint0_linear_9_173" x1="104" y1="0" x2="0" y2="104"
+                                gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#D665FF" />
+                                <stop offset="1" stop-color="#4C6FFF" />
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
+            </div>
+        </section>
+
+        <section class="what-is-solestate mt-20">
+            <div class="what-is-solestate-container">
+                <p class="question font-graphik-light text-white text-2xl">
+                    What is SolEstate DAO
+                </p>
+
+                <p class="answer font-graphik-light text-gray-300 text-xs leading-5 mt-3">
+                    SolEstate is an NFT real estate project investment vehicle fusing the Metaverse through real-world
+                    property ownership
+                    utilizing NFT fractionalization. SolEstate.land Decentralised Autonomous Organisation (DAO) is a
+                    Real property estate
+                    community experiment, based and built on the Solana blockchain.
+                </p>
+
+                <p class="extended-answer font-graphik-light text-gray-300 text-xs leading-5 mt-5">
+                    We resolved to build on the Solana blockchain because it processes transactions at an exceedingly
+                    faster rate than the
+                    Ethereum blockchain with about 50,000 transactions per second. This speed of transaction translates
+                    to lower costs of
+                    transaction which is critical for user experience as high transaction fees can act as a hindrance to
+                    an entry point in
+                    the market.
+                </p>
+            </div>
+        </section>
+
+        <section class="redefining-nft mt-20">
+            <div class="redefining-nft-container">
+                <p class="redefining-nft-header font-graphik-light text-white text-2xl">
+                    This time we are redefining the NFT narative
+                </p>
+
+                <p class="redefining-nft-old-text font-graphik-light text-gray-500 text-left text-xs mt-3">
+                    NFTs have limitless potentials however, the NFT market is currently crammed with art-based NFTs. Art
+                    NFTs in itself
+                    isn’t a bad thing, nonetheless, there is evidence of severe devaluations mere minutes after minting
+                    these. The reason is
+                    a simple case of higher supply versus lower demand as art NFTs are surplus in the market.
+                </p>
+
+                <p class="redefining-nft-new-text font-graphik-light text-gray-400 text-right text-xs mt-5">
+                    We had these aforementioned drawbacks of the existing NFTs in mind during our project creation
+                    phase. SolEstate provides
+                    its holders with the opportunity to be involved in real estate while owning art. SolEstate will be a
+                    collection of
+                    certificate NFTs that entitles its holder’s ownership in real landed properties both in the physical
+                    and the metaverse
+                    while serving as art simultaneously.
+                </p>
+            </div>
+        </section>
+
+        <section class="ownership-of-land mt-28">
+            <div class="ownership-of-land-container">
+                <p class="ownership-of-land-header-text font-graphik-light text-white text-2xl text-center">
+                    Ownership of a piece in the of Land here and on the Metaverse
+                </p>
+
+                <div class="image-one">
+                    <img class="w-full" src="../assets/images/image 1.png" alt="">
+                </div>
+
+                <div class="image-two">
+                    <img class="w-full" src="../assets/images/image 2.png" alt="">
+                </div>
+
+                <p class="ownwership-of-land-details font-graphik-light text-gray-300 text-xs text-center tracking-widest px-5">
+                    SolEstate will be collections of certificates NFTs that serve as "ART" and connect the holder to
+                    real land ownership in
+                    the physical and metaverse. Each NFT represents 1/10000 ownership of resorts, hotels, and gold
+                    mines. In other words,
+                    each NFT in the collection will represent 1/10000th of a share in the ownership of each
+                    revenue-generating property.
+                </p>
+
+
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>
