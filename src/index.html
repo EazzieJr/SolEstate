@@ -124,12 +124,15 @@
             <!-- Hero container for mobile -->
             <div class="hero-container text-center lg:text-left lg:flex items-center my-14 sm:my-20 md:my-24 lg:my-36">
                 <div class="hero-left-container block lg:w-2/3">
-                    <p class="hero-header font-graphik-light text-white text-3xl sm:text-4xl md:text-5xl sm:px-10 md:px-16 lg:px-0">
+                    <p
+                        class="hero-header font-graphik-light text-white text-3xl sm:text-4xl md:text-5xl sm:px-10 md:px-16 lg:px-0">
                         A New Protocol for Non Fungible Intelligence
                     </p>
-    
-                    <p class="hero-details font-graphik-light text-sm text-gray-300 text-center lg:text-left tracking-widest mt-5 sm:mt-8 px-5 sm:px-20 md:px-24 lg:pl-10 lg:pr-32">
-                        We resolved to build on the Solana blockchain because it processes transactions at an exceedingly
+
+                    <p
+                        class="hero-details font-graphik-light text-sm text-gray-300 text-center lg:text-left tracking-widest mt-5 sm:mt-8 px-5 sm:px-20 md:px-24 lg:pl-10 lg:pr-32">
+                        We resolved to build on the Solana blockchain because it processes transactions at an
+                        exceedingly
                         faster rate than the
                         Ethereum blockchain with about 50,000 transactions per second.
                     </p>
@@ -255,23 +258,50 @@
         </section>
 
         <section class="ownership-of-land mt-28 lg:mt-32">
-            <div class="ownership-of-land-container">
-                <p class="ownership-of-land-header-text font-graphik-light text-white text-2xl sm:text-3xl lg:text-4xl text-center lg:leading-10 sm:px-16 md:px-28 lg:px-52">
+            <!-- For small screens -->
+            <div class="ownership-of-land-container lg:hidden">
+                <p
+                    class="ownership-of-land-header-text font-graphik-light text-white text-2xl sm:text-3xl lg:text-4xl text-center lg:leading-10 sm:px-16 md:px-28 lg:px-48">
                     Ownership of a piece in the of Land here and on the Metaverse
                 </p>
 
-                <div class="images-and-details-container lg:grid grid-cols-2">
-                    <div class="images-container md:flex justify-evenly items-center md:mt-10">
-                        <div class="image-two mt-3 sm:mt-5 sm:flex justify-center">
-                            <img class="w-full sm:w-3/4 md:w-full" src="../assets/images/image 2.png" alt="">
-                        </div>
-
-                        <div class="image-one mt-5 sm:mt-7 sm:flex justify-center">
-                            <img class="w-full sm:w-3/4 md:w-full" src="../assets/images/image 1.png" alt="">
-                        </div>
+                <div class="images-container md:flex justify-evenly items-center md:mt-10">
+                    <div class="image-two mt-3 sm:mt-5 sm:flex justify-center">
+                        <img class="w-full sm:w-3/4 md:w-full" src="../assets/images/image 2.png" alt="">
                     </div>
-    
-                    <p  class="ownwership-of-land-details font-graphik-light text-gray-300 text-xs sm:text-sm text-center tracking-widest px-5 sm:px-14 mt-5 sm:mt-10">
+
+                    <div class="image-one mt-5 sm:mt-7 sm:flex justify-center">
+                        <img class="w-full sm:w-3/4 md:w-full" src="../assets/images/image 1.png" alt="">
+                    </div>
+                </div>
+
+                <p
+                    class="ownwership-of-land-details font-graphik-light text-gray-300 text-xs sm:text-sm text-center tracking-widest px-5 sm:px-14 mt-5 sm:mt-10">
+                    SolEstate will be collections of certificates NFTs that serve as "ART" and connect the holder to
+                    real land ownership in
+                    the physical and metaverse. Each NFT represents 1/10000 ownership of resorts, hotels, and gold
+                    mines. In other words,
+                    each NFT in the collection will represent 1/10000th of a share in the ownership of each
+                    revenue-generating property.
+                </p>
+            </div>
+
+            <!-- For big screens -->
+            <div class="ownership-of-land-container hidden lg:block">
+                <p class="ownership-of-land-header-text font-graphik-light text-white text-2xl sm:text-3xl lg:text-4xl text-center lg:leading-10 sm:px-16 md:px-28 lg:px-48">
+                    Ownership of a piece in the of Land here and on the Metaverse
+                </p>
+
+                <div class="flex-container md:flex justify-evenly items-center md:mt-10">
+                    <div class="image-two mt-3 sm:mt-5 sm:flex justify-center">
+                        <img class="w-full sm:w-3/4 md:w-full" src="../assets/images/image 2.png" alt="">
+                    </div>
+
+                    <div class="image-one mt-5 sm:mt-7 sm:flex justify-center">
+                        <img class="w-full sm:w-3/4 md:w-full" src="../assets/images/image 1.png" alt="">
+                    </div>
+
+                    <p class="ownwership-of-land-details font-graphik-light text-gray-300 text-xs sm:text-sm text-center tracking-widest px-5 sm:px-14 mt-5 sm:mt-10">
                         SolEstate will be collections of certificates NFTs that serve as "ART" and connect the holder to
                         real land ownership in
                         the physical and metaverse. Each NFT represents 1/10000 ownership of resorts, hotels, and gold
