@@ -8,109 +8,116 @@
     <title>SolEstate</title>
     <link rel="stylesheet" href="public/styles/style.css">
     <link rel="stylesheet" href="sass/style.scss">
+    <link rel="stylesheet" href="sass/nav.scss">
     <link rel="stylesheet" href="../font/graphik/stylesheet.css">
 </head>
 
-<body class="bg-body-pattern bg-no-repeat bg-cover">
+<body class="bg-body-pattern bg-no-repeat bg-cover overflow-x-hidden">
     <div class="container mx-auto px-7 sm:px-14 md:px-16 lg:px-20 xl:px-24 2xl:px-28">
-        <nav>
-            <!-- Nav for small screens -->
+        <nav class="z-50">
             <div class="nav-container py-4 sm:py-5 flex justify-between items-center">
                 <div class="left-container">
                     <!-- Logo -->
-                    <div class="logo">
-                        <svg class="w-16 lg:w-20" width="82" height="22" viewBox="0 0 82 22" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
+                    <div class="logo overflow-hidden">
+                        <svg class="w-16 lg:w-20 transform -translate-x-20" width="82" height="22" viewBox="0 0 82 22"
+                            fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M0.82 21H14.456V16.1H7.176V0.979999H0.82V21ZM25.9247 16.38C23.4047 16.38 21.8087 14.504 21.8087 11.088V10.864C21.8087 7.448 23.4047 5.628 25.8687 5.628C28.3887 5.628 30.0127 7.476 30.0127 10.864V11.088C30.0127 14.42 28.4167 16.38 25.9247 16.38ZM25.7567 21.364C32.3367 21.364 36.6207 17.192 36.6207 10.948V10.724C36.6207 4.396 32.0287 0.672 25.8687 0.672C19.8767 0.672 15.1727 4.704 15.1727 10.892V11.116C15.1727 17.192 19.2047 21.364 25.7567 21.364ZM48.4481 21.364C55.1681 21.364 58.4441 17.388 58.4441 12.404V9.828H48.8401V14H52.2561C52.1161 15.316 51.1641 16.548 48.6441 16.548C45.3961 16.548 44.4161 14.168 44.4161 11.228V11.004C44.4161 7.616 45.9561 5.656 48.4761 5.656C50.4361 5.656 51.4721 6.58 51.6961 8.232H57.9681C57.6321 2.884 53.3201 0.672 48.4481 0.672C42.3721 0.672 37.8081 4.76 37.8081 10.892V11.116C37.8081 17.136 41.5321 21.364 48.4481 21.364ZM70.3752 16.38C67.8552 16.38 66.2592 14.504 66.2592 11.088V10.864C66.2592 7.448 67.8552 5.628 70.3192 5.628C72.8392 5.628 74.4632 7.476 74.4632 10.864V11.088C74.4632 14.42 72.8672 16.38 70.3752 16.38ZM70.2072 21.364C76.7872 21.364 81.0712 17.192 81.0712 10.948V10.724C81.0712 4.396 76.4792 0.672 70.3192 0.672C64.3272 0.672 59.6232 4.704 59.6232 10.892V11.116C59.6232 17.192 63.6552 21.364 70.2072 21.364Z"
                                 fill="white" />
                         </svg>
                     </div>
                 </div>
-
-                <div class="mid-container hidden lg:block lg:w-72 xl:w-88">
-                    <ul class="flex justify-between items-center font-graphik-light">
-                        <li><a class="home-nav lg:text-xs xl:text-sm text-white" href="#">Home</a></li>
-                        <li><a class="about-nav lg:text-xs xl:text-sm text-white" href="#">About us</a></li>
-                        <li><a class="how-to-pay lg:text-xs xl:text-sm text-white" href="#">How to buy</a></li>
-                        <li><a class="white-paper-nav lg:text-xs xl:text-sm text-white" href="#">White Paper</a></li>
+    
+                <div class="mid-container hidden lg:block lg:w-72 xl:w-96">
+                    <ul class="flex justify-between items-center font-graphik-light overflow-hidden">
+                        <li class="transform translate-y-10"><a
+                                class="home-nav lg:text-xs xl:text-sm tracking-wide text-white" href="#">Home</a></li>
+                        <li class="transform translate-y-10"><a
+                                class="about-nav lg:text-xs xl:text-sm tracking-wide text-white" href="#">About us</a>
+                        </li>
+                        <li class="transform translate-y-10"><a
+                                class="how-to-pay lg:text-xs xl:text-sm tracking-wide text-white" href="#">How to
+                                buy</a></li>
+                        <li class="transform translate-y-10"><a
+                                class="white-paper-nav lg:text-xs xl:text-sm tracking-wide text-white" href="#">White
+                                Paper</a></li>
                     </ul>
                 </div>
-
+    
                 <div class="right-container">
                     <!-- For small screens -->
-                    <div class="flex items-center lg:hidden">
-                        <p class="font-graphik hidden md:block text-white font-bold mr-7" onclick="openMenu()">
+                    <div class="small-menu-burger flex items-center lg:hidden">
+                        <p class="menu-text font-graphik hidden md:block text-white font-bold mr-7" onclick="openMenu()">
                             MENU
                         </p>
-                        <a href="#menu-btn">
-                            <div id="menu-btn" class="menu-btn p-1" onclick="openMenu()">
+                        <a href="#">
+                            <div id="menu-btn" class="menu-btn p-1 transform scale-0" onclick="openMenu()">
                                 <div class="menu-btn-burger rounded-sm rounded-l rounded-r">
-
+    
                                 </div>
                             </div>
                         </a>
                     </div>
-
+    
                     <!-- For big screens -->
-                    <div class="icons-container hidden lg:flex justify-between items-center lg:w-48 xl:w-56">
+                    <div class="icons-container hidden lg:flex justify-between items-center lg:w-48 xl:w-56 2xl:w-72">
                         <div class="solana">
                             <a href="#">
-                                <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="15" cy="15" r="15" fill="#101225" />
+                                <svg class="lg:w-5 xl:w-10 2xl:w-14 transform scale-0" width="30" height="30"
+                                    viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="15" cy="15" r="15" fill="#505780" />
                                     <path
-                                        d="M21.3333 9.33325H11.6667C11.46 9.33325 11.26 9.43325 11.1333 9.59992L10.1333 10.9333C9.80666 11.3733 10.12 11.9999 10.6667 11.9999H20.3333C20.54 11.9999 20.74 11.8999 20.8666 11.7333L21.8666 10.3999C22.1933 9.95992 21.88 9.33325 21.3333 9.33325Z"
+                                        d="M21.3333 9.33334H11.6666C11.46 9.33334 11.26 9.43334 11.1333 9.60001L10.1333 10.9333C9.80665 11.3733 10.12 12 10.6666 12H20.3333C20.54 12 20.74 11.9 20.8666 11.7333L21.8666 10.4C22.1933 9.96001 21.88 9.33334 21.3333 9.33334Z"
                                         fill="#7895FF" />
                                     <path
-                                        d="M10.6667 13.6667H20.3333C20.54 13.6667 20.74 13.7667 20.8666 13.9334L21.8666 15.2667C22.1933 15.7067 21.88 16.3334 21.3333 16.3334H11.6667C11.46 16.3334 11.26 16.2334 11.1333 16.0667L10.1333 14.7334C9.80666 14.2934 10.12 13.6667 10.6667 13.6667Z"
+                                        d="M10.6666 13.6667H20.3333C20.54 13.6667 20.74 13.7667 20.8666 13.9333L21.8666 15.2667C22.1933 15.7067 21.88 16.3333 21.3333 16.3333H11.6666C11.46 16.3333 11.26 16.2333 11.1333 16.0667L10.1333 14.7333C9.80665 14.2933 10.12 13.6667 10.6666 13.6667Z"
                                         fill="#7895FF" />
                                     <path
-                                        d="M21.3333 18H11.6667C11.46 18 11.26 18.1 11.1333 18.2667L10.1333 19.6C9.80666 20.04 10.12 20.6667 10.6667 20.6667H20.3333C20.54 20.6667 20.74 20.5667 20.8666 20.4L21.8666 19.0667C22.1933 18.6267 21.88 18 21.3333 18Z"
+                                        d="M21.3333 18H11.6666C11.46 18 11.26 18.1 11.1333 18.2667L10.1333 19.6C9.80665 20.04 10.12 20.6667 10.6666 20.6667H20.3333C20.54 20.6667 20.74 20.5667 20.8666 20.4L21.8666 19.0667C22.1933 18.6267 21.88 18 21.3333 18Z"
                                         fill="#7895FF" />
                                 </svg>
                             </a>
                         </div>
-
-                        <div class="discord">
-                            <div class="h-7 w-7 rounded-full bg-dark flex justify-center items-center">
+    
+                        <div class="discord transform scale-0">
+                            <div class="h-5 w-5 xl:h-8 xl:w-8 rounded-full bg-dark flex justify-center items-center">
                                 <a href="#">
-                                    <i class="fab fa-discord text-light text-sm"></i>
+                                    <i class="fab fa-discord text-light text-tiny xl:text-xs"></i>
                                 </a>
                             </div>
                         </div>
-
+    
                         <div class="telegram">
                             <a href="#">
-                                <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="15" cy="15" r="15" fill="#101225" />
+                                <svg class="lg:w-5 xl:w-10 2xl:w-14 transform scale-0" width="30" height="30"
+                                    viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="15" cy="15" r="15" fill="#505780" />
                                     <path
-                                        d="M14.9962 8.33325C13.6777 8.33325 12.3887 8.72425 11.2924 9.45679C10.1961 10.1893 9.3416 11.2305 8.83702 12.4487C8.33243 13.6669 8.20041 15.0073 8.45764 16.3005C8.71488 17.5937 9.34982 18.7816 10.2822 19.714C11.2145 20.6463 12.4024 21.2813 13.6956 21.5385C14.9888 21.7957 16.3293 21.6637 17.5474 21.1591C18.7656 20.6545 19.8068 19.8 20.5393 18.7037C21.2719 17.6074 21.6629 16.3185 21.6629 14.9999C21.663 14.1244 21.4906 13.2575 21.1556 12.4486C20.8206 11.6397 20.3295 10.9048 19.7104 10.2857C19.0913 9.66664 18.3564 9.17558 17.5475 8.84057C16.7387 8.50557 15.8717 8.33318 14.9962 8.33325ZM17.1159 18.4349C17.0909 18.4971 17.053 18.5533 17.0045 18.5996C16.9561 18.646 16.8983 18.6814 16.8351 18.7036C16.7718 18.7258 16.7045 18.7342 16.6378 18.7283C16.571 18.7224 16.5062 18.7022 16.4479 18.6692L14.6381 17.263L13.4766 18.3346C13.4496 18.3545 13.4181 18.3673 13.3849 18.3719C13.3517 18.3764 13.3179 18.3725 13.2866 18.3605L13.5092 16.3682L13.5164 16.3739L13.5209 16.3346C13.5209 16.3346 16.7776 13.3696 16.9102 13.2432C17.0446 13.1172 17.0002 13.0899 17.0002 13.0899C17.0079 12.9362 16.7592 13.0899 16.7592 13.0899L12.4442 15.8659L10.6472 15.2539C10.6472 15.2539 10.3712 15.1549 10.3452 14.9373C10.3179 14.7213 10.6562 14.6039 10.6562 14.6039L17.8009 11.7656C17.8009 11.7656 18.3882 11.5039 18.3882 11.9373L17.1159 18.4349Z"
+                                        d="M14.9962 8.33334C13.6777 8.33334 12.3887 8.72434 11.2924 9.45688C10.1961 10.1894 9.34159 11.2306 8.837 12.4488C8.33242 13.667 8.2004 15.0074 8.45763 16.3006C8.71486 17.5938 9.3498 18.7817 10.2822 19.7141C11.2145 20.6464 12.4024 21.2813 13.6956 21.5386C14.9888 21.7958 16.3292 21.6638 17.5474 21.1592C18.7656 20.6546 19.8068 19.8001 20.5393 18.7038C21.2719 17.6075 21.6629 16.3186 21.6629 15C21.6629 14.1245 21.4905 13.2576 21.1555 12.4487C20.8205 11.6398 20.3295 10.9049 19.7104 10.2858C19.0913 9.66673 18.3564 9.17567 17.5475 8.84067C16.7386 8.50566 15.8717 8.33327 14.9962 8.33334ZM17.1159 18.435C17.0909 18.4972 17.053 18.5534 17.0045 18.5997C16.9561 18.6461 16.8983 18.6815 16.835 18.7037C16.7718 18.7259 16.7045 18.7343 16.6377 18.7284C16.571 18.7225 16.5062 18.7023 16.4479 18.6693L14.6381 17.2631L13.4765 18.3347C13.4496 18.3546 13.4181 18.3674 13.3849 18.3719C13.3517 18.3765 13.3179 18.3726 13.2865 18.3606L13.5092 16.3683L13.5163 16.374L13.5209 16.3347C13.5209 16.3347 16.7776 13.3696 16.9102 13.2433C17.0445 13.1173 17.0002 13.09 17.0002 13.09C17.0079 12.9363 16.7592 13.09 16.7592 13.09L12.4442 15.866L10.6472 15.254C10.6472 15.254 10.3712 15.155 10.3452 14.9373C10.3179 14.7213 10.6562 14.604 10.6562 14.604L17.8009 11.7657C17.8009 11.7657 18.3882 11.504 18.3882 11.9373L17.1159 18.435Z"
                                         fill="#7895FF" />
                                 </svg>
                             </a>
                         </div>
-
+    
                         <div class="twitter">
                             <a href="#">
-                                <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="15" cy="15" r="15" fill="#101225" />
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                        d="M21.6667 11.3001C21.3221 11.7595 20.9056 12.1602 20.4333 12.4868C20.4333 12.6068 20.4333 12.7268 20.4333 12.8535C20.4352 13.9323 20.2224 15.0007 19.8074 15.9965C19.3924 16.9922 18.7834 17.8955 18.016 18.6537C17.2485 19.4119 16.3378 20.0098 15.3371 20.4126C14.3363 20.8154 13.2654 21.0152 12.1867 21.0001C10.927 21.0043 9.68337 20.7168 8.55333 20.1601C8.52352 20.1471 8.49817 20.1257 8.4804 20.0984C8.46263 20.0712 8.45322 20.0393 8.45333 20.0068V19.9335C8.45333 19.8875 8.47159 19.8434 8.5041 19.8109C8.53661 19.7784 8.5807 19.7601 8.62667 19.7601C9.86493 19.7193 11.059 19.2902 12.04 18.5335C11.4908 18.5224 10.9559 18.3563 10.4971 18.0543C10.0382 17.7524 9.67407 17.3268 9.44667 16.8268C9.43514 16.7994 9.43086 16.7695 9.43423 16.7399C9.4376 16.7104 9.44852 16.6822 9.46593 16.6581C9.48333 16.634 9.50665 16.6148 9.53363 16.6023C9.56062 16.5898 9.59036 16.5845 9.62 16.5868C9.96064 16.621 10.3047 16.5893 10.6333 16.4935C10.0303 16.3683 9.48262 16.0549 9.06925 15.5984C8.65587 15.1419 8.39818 14.5659 8.33333 13.9535C8.33101 13.9238 8.33635 13.8941 8.34884 13.8671C8.36133 13.8401 8.38055 13.8168 8.40465 13.7994C8.42875 13.782 8.45693 13.7711 8.48647 13.7677C8.51601 13.7643 8.54592 13.7686 8.57333 13.7801C8.90536 13.9266 9.26379 14.0037 9.62667 14.0068C9.09948 13.6609 8.7017 13.1502 8.49545 12.5544C8.28921 11.9586 8.28612 11.3112 8.48667 10.7135C8.50759 10.6547 8.54341 10.6025 8.59061 10.5617C8.6378 10.521 8.69477 10.4932 8.75592 10.4812C8.81707 10.4691 8.88031 10.473 8.93946 10.4927C8.99861 10.5124 9.05163 10.5471 9.09333 10.5935C10.5563 12.1498 12.5665 13.0772 14.7 13.1801C14.6453 12.9622 14.6185 12.7382 14.62 12.5135C14.6298 11.9374 14.8105 11.3771 15.1393 10.904C15.4681 10.4308 15.9301 10.0661 16.4667 9.85602C17.0032 9.64598 17.59 9.60014 18.1527 9.72431C18.7153 9.84849 19.2284 10.1371 19.6267 10.5535C20.1819 10.4477 20.7187 10.2613 21.22 10.0001C21.238 9.98889 21.2588 9.98294 21.28 9.98294C21.3012 9.98294 21.322 9.98889 21.34 10.0001C21.3512 10.0181 21.3572 10.0389 21.3572 10.0601C21.3572 10.0813 21.3512 10.1021 21.34 10.1201C21.0972 10.6759 20.687 11.142 20.1667 11.4535C20.6223 11.4006 21.07 11.2932 21.5 11.1335C21.5177 11.1214 21.5386 11.115 21.56 11.115C21.5814 11.115 21.6023 11.1214 21.62 11.1335C21.635 11.1403 21.6483 11.1503 21.659 11.1629C21.6697 11.1754 21.6776 11.1901 21.682 11.206C21.6864 11.2218 21.6874 11.2385 21.6847 11.2547C21.6821 11.271 21.6759 11.2865 21.6667 11.3001Z"
+                                <svg class="lg:w-5 xl:w-10 2xl:w-14 transform scale-0" width="30" height="30"
+                                    viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="15" cy="15" r="15" fill="#505780" />
+                                    <path
+                                        d="M14.9962 8.33334C13.6777 8.33334 12.3887 8.72434 11.2924 9.45688C10.1961 10.1894 9.34159 11.2306 8.837 12.4488C8.33242 13.667 8.2004 15.0074 8.45763 16.3006C8.71486 17.5938 9.3498 18.7817 10.2822 19.7141C11.2145 20.6464 12.4024 21.2813 13.6956 21.5386C14.9888 21.7958 16.3292 21.6638 17.5474 21.1592C18.7656 20.6546 19.8068 19.8001 20.5393 18.7038C21.2719 17.6075 21.6629 16.3186 21.6629 15C21.6629 14.1245 21.4905 13.2576 21.1555 12.4487C20.8205 11.6398 20.3295 10.9049 19.7104 10.2858C19.0913 9.66673 18.3564 9.17567 17.5475 8.84067C16.7386 8.50566 15.8717 8.33327 14.9962 8.33334ZM17.1159 18.435C17.0909 18.4972 17.053 18.5534 17.0045 18.5997C16.9561 18.6461 16.8983 18.6815 16.835 18.7037C16.7718 18.7259 16.7045 18.7343 16.6377 18.7284C16.571 18.7225 16.5062 18.7023 16.4479 18.6693L14.6381 17.2631L13.4765 18.3347C13.4496 18.3546 13.4181 18.3674 13.3849 18.3719C13.3517 18.3765 13.3179 18.3726 13.2865 18.3606L13.5092 16.3683L13.5163 16.374L13.5209 16.3347C13.5209 16.3347 16.7776 13.3696 16.9102 13.2433C17.0445 13.1173 17.0002 13.09 17.0002 13.09C17.0079 12.9363 16.7592 13.09 16.7592 13.09L12.4442 15.866L10.6472 15.254C10.6472 15.254 10.3712 15.155 10.3452 14.9373C10.3179 14.7213 10.6562 14.604 10.6562 14.604L17.8009 11.7657C17.8009 11.7657 18.3882 11.504 18.3882 11.9373L17.1159 18.435Z"
                                         fill="#7895FF" />
                                 </svg>
                             </a>
                         </div>
-
+    
                         <div class="youtube">
                             <a href="#">
-                                <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="15" cy="15" r="15" fill="#101225" />
+                                <svg class="lg:w-5 xl:w-10 2xl:w-14 transform scale-0" width="30" height="30"
+                                    viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="15" cy="15" r="15" fill="#505780" />
                                     <path
-                                        d="M18.3333 9.66675H11.6667C9.66667 9.66675 8.33334 11.0001 8.33334 13.0001V17.0001C8.33334 19.0001 9.66667 20.3334 11.6667 20.3334H18.3333C20.3333 20.3334 21.6667 19.0001 21.6667 17.0001V13.0001C21.6667 11.0001 20.3333 9.66675 18.3333 9.66675ZM16.26 15.6867L14.6133 16.6734C13.9467 17.0734 13.4 16.7668 13.4 15.9868V14.0068C13.4 13.2268 13.9467 12.9201 14.6133 13.3201L16.26 14.3067C16.8933 14.6934 16.8933 15.3067 16.26 15.6867Z"
+                                        d="M18.3333 9.66666H11.6666C9.66665 9.66666 8.33331 11 8.33331 13V17C8.33331 19 9.66665 20.3333 11.6666 20.3333H18.3333C20.3333 20.3333 21.6666 19 21.6666 17V13C21.6666 11 20.3333 9.66666 18.3333 9.66666ZM16.26 15.6867L14.6133 16.6733C13.9466 17.0733 13.4 16.7667 13.4 15.9867V14.0067C13.4 13.2267 13.9466 12.92 14.6133 13.32L16.26 14.3067C16.8933 14.6933 16.8933 15.3067 16.26 15.6867Z"
                                         fill="#7895FF" />
                                 </svg>
                             </a>
@@ -119,26 +126,45 @@
                 </div>
             </div>
         </nav>
+    </div>
+    
+    <div class="dropdown lg:hidden absolute w-full shadow-2xl bg-white">
+        <div class="dropdown-navlist items-center">
+            <ul class="text-center text-white  space-y-5 mt-10">
+                <li><a class="relative text-white font-graphik-light text-base tracking-widest flex justify-center" href="index.html" onclick="closeMenu()">Home</a></li>
+                <li><a class="relative text-white font-graphik-light text-base tracking-widest flex justify-center" href="#" onclick="closeMenu()">About us</a></li>
+                <li><a class="relative text-white font-graphik-light text-base tracking-widest flex justify-center" href="#" onclick="closeMenu()">How to buy</a></li>
+                <li><a class="white-paper relative text-white font-graphik-light text-base tracking-widest flex justify-center" href="#" onclick="closeMenu()">White Paper</a></li>
+            </ul>
+        </div>
+    </div>
 
+    <div class="container mx-auto px-7 sm:px-14 md:px-16 lg:px-20 xl:px-24 2xl:px-28">
         <section class="hero">
             <div class="hero-container text-center lg:text-left lg:flex items-center my-14 sm:my-20 md:my-24 lg:my-36">
                 <div class="hero-left-container block lg:w-2/3">
-                    <p class="hero-header font-graphik-light text-white text-3xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl sm:px-10 md:px-16 lg:px-0">
-                        A New Protocol for Non Fungible Intelligence
-                    </p>
+                    <div class="hero-header-container overflow-hidden">
+                        <p
+                            class="hero-header font-graphik-light text-white text-3xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl sm:px-10 md:px-16 lg:px-0">
+                            A New Protocol for Non Fungible Intelligence
+                        </p>
+                    </div>
 
-                    <p class="hero-details font-graphik-light text-sm xl:text-base text-gray-300 text-center lg:text-left tracking-widest xl:tracking-wider xl:leading-loose mt-5 sm:mt-8 px-5 sm:px-20 md:px-24 lg:pl-10 xl:pl-14 lg:pr-32 xl:pr-40">
-                        We resolved to build on the Solana blockchain because it processes transactions at an
-                        exceedingly
-                        faster rate than the
-                        Ethereum blockchain with about 50,000 transactions per second.
-                    </p>
+                    <div class="hero-details-container overflow-hidden">
+                        <p
+                            class="hero-details font-graphik-light text-sm xl:text-base text-gray-300 text-center lg:text-left tracking-widest xl:tracking-wider xl:leading-loose mt-5 sm:mt-8 px-5 sm:px-20 md:px-24 lg:pl-10 xl:pl-14 lg:pr-32 xl:pr-40">
+                            We resolved to build on the Solana blockchain because it processes transactions at an
+                            exceedingly
+                            faster rate than the
+                            Ethereum blockchain with about 50,000 transactions per second.
+                        </p>
+                    </div>
                 </div>
 
                 <div class="hero-right-container">
-                    <div class="flex justify-center mt-3 sm:mt-8">
-                        <svg class="w-16 md:w-20 xl:w-28" width="104" height="104" viewBox="0 0 104 104" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
+                    <div class="svg-container flex justify-center mt-3 sm:mt-8">
+                        <svg class="w-16 md:w-20 xl:w-28 transform scale-0" width="104" height="104"
+                            viewBox="0 0 104 104" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <circle cx="52" cy="52" r="52" fill="url(#paint0_linear_9_173)" />
                             <path
                                 d="M60 43.5H45.5C45.19 43.5 44.89 43.65 44.7 43.9L43.2 45.9C42.71 46.56 43.18 47.5 44 47.5H58.5C58.81 47.5 59.11 47.35 59.3 47.1L60.8 45.1C61.29 44.44 60.82 43.5 60 43.5Z"
@@ -163,13 +189,15 @@
         </section>
 
         <section class="what-is-solestate mt-20 sm:mt-28 lg:mt-28 xl:mt-52">
-            <div class="what-is-solestate-container">
-                <p class="question font-graphik-light text-white text-2xl sm:text-3xl md:text-3xl lg:text-lg4xl xl:text-5xl">
+            <div class="what-is-solestate-container overflow-hidden">
+                <p
+                    class="question font-graphik-light text-white text-2xl sm:text-3xl md:text-3xl lg:text-lg4xl xl:text-5xl">
                     What is SolEstate DAO
                 </p>
 
                 <div class="answers-container md:grid grid-cols-2 md:mt-5 gap-x-10 lg:gap-x-20 xl:gap-x-24">
-                    <p class="answer font-graphik-light text-gray-300 text-xs lg:text-sm sm:text-sm md:text-xs xl:text-base leading-5 sm:leading-6 xl:leading-loose xl:tracking-widest mt-3 sm:mt-5 md:mt-0">
+                    <p
+                        class="answer font-graphik-light text-gray-300 text-xs lg:text-sm sm:text-sm md:text-xs xl:text-base leading-5 sm:leading-6 xl:leading-loose xl:tracking-widest mt-3 sm:mt-5 md:mt-0">
                         SolEstate is an NFT real estate project investment vehicle fusing the Metaverse through
                         real-world
                         property ownership
@@ -178,7 +206,8 @@
                         community experiment, based and built on the Solana blockchain.
                     </p>
 
-                    <p class="extended-answer font-graphik-light text-gray-300 text-xs lg:text-sm sm:text-sm md:text-xs xl:text-base leading-5 sm:leading-6 xl:leading-loose xl:tracking-widest mt-5 sm:mt-7 md:mt-0">
+                    <p
+                        class="extended-answer font-graphik-light text-gray-300 text-xs lg:text-sm sm:text-sm md:text-xs xl:text-base leading-5 sm:leading-6 xl:leading-loose xl:tracking-widest mt-5 sm:mt-7 md:mt-0">
                         We resolved to build on the Solana blockchain because it processes transactions at an
                         exceedingly
                         faster rate than the
@@ -196,13 +225,16 @@
 
         <section class="redefining-nft mt-20 sm:mt-24 lg:mt-32 xl:mt-52">
             <div class="redefining-nft-container">
-                <p class="redefining-nft-header font-graphik-light text-white text-2xl sm:text-3xl md:text-lg4xl lg:text-lg6xl xl:text-lg7xl 2xl:text-8xl md:pr-60">
+                <p
+                    class="redefining-nft-header font-graphik-light text-white text-2xl sm:text-4xl md:text-lg4xl lg:text-lg6xl xl:text-lg7xl 2xl:text-8xl sm:pr-52 md:pr-60">
                     This time we are redefining the NFT narative
                 </p>
 
-                <div class="old-meets-new md:grid grid-cols-2 gap-x-10 lg:gap-x-16 xl:gap-x-24 md:mt-5 lg:mr-40 xl:mr-52 xl:mt-10">
+                <div
+                    class="old-meets-new md:grid grid-cols-2 gap-x-10 lg:gap-x-16 xl:gap-x-24 md:mt-5 lg:mr-40 xl:mr-52 xl:mt-10">
                     <div class="old-text-container block md:space-y-4">
-                        <p class="redefining-nft-old-text font-graphik-light text-gray-500 text-left md:text-justify text-xs sm:text-sm lg:text-base xl:leading-loose mt-3 sm:mt-5 md:mt-0 sm:pr-20 md:pr-0">
+                        <p
+                            class="redefining-nft-old-text font-graphik-light text-gray-500 text-left md:text-justify text-xs sm:text-sm leading-5 lg:text-base xl:leading-loose mt-3 sm:mt-5 md:mt-0 sm:pr-20 md:pr-0">
                             NFTs have limitless potentials however, the NFT market is currently crammed with art-based
                             NFTs. Art
                             NFTs in itself
@@ -213,8 +245,8 @@
                         </p>
 
                         <div class="arrow-container hidden md:flex justify-end">
-                            <svg class="md:w-20 lg:w-24 xl:w-32" width="158" height="58" viewBox="0 0 158 58" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
+                            <svg class="md:w-20 lg:w-24 xl:w-32" width="158" height="58" viewBox="0 0 158 58"
+                                fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M156.5 39.5002C139.667 49.3335 96.6 65.4002 59 51.0002C21.4 36.6002 9.33333 12.3335 8 2.00012M8 2.00012L1 15.0001M8 2.00012L19.5 7.00012"
                                     stroke="#66CB9F" stroke-width="2" />
@@ -224,15 +256,16 @@
 
                     <div class="new-text-container block md:space-y-4">
                         <div class="arrow-container hidden md:flex justify-start">
-                            <svg class="md:w-20 lg:w-24 xl:w-32" width="158" height="58" viewBox="0 0 158 58" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
+                            <svg class="md:w-20 lg:w-24 xl:w-32" width="158" height="58" viewBox="0 0 158 58"
+                                fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M1 18.2376C17.8333 8.40428 60.9 -7.66238 98.5 6.73762C136.1 21.1376 148.167 45.4043 149.5 55.7377M149.5 55.7377L156.5 42.7377M149.5 55.7377L138 50.7377"
                                     stroke="#66CB9F" stroke-width="2" />
                             </svg>
                         </div>
 
-                        <p class="redefining-nft-new-text font-graphik-light text-gray-400 text-right md:text-justify text-xs sm:text-sm lg:text-base xl:leading-loose mt-5 sm:mt-7 md:mt-0 sm:pl-20 md:pl-0">
+                        <p
+                            class="redefining-nft-new-text font-graphik-light text-gray-400 text-right md:text-justify text-xs sm:text-sm lg:text-base leading-5 xl:leading-loose mt-5 sm:mt-7 md:mt-0 sm:pl-20 md:pl-0">
                             We had these aforementioned drawbacks of the existing NFTs in mind during our project
                             creation
                             phase. SolEstate provides
@@ -253,22 +286,21 @@
             <!-- For small screens -->
             <div class="ownership-of-land-container lg:hidden">
                 <p
-                    class="ownership-of-land-header-text font-graphik-light text-white text-2xl sm:text-3xl lg:text-4xl text-center lg:leading-10 sm:px-16 md:px-28 lg:px-48">
+                    class="ownership-of-land-header-text-small font-graphik-light text-white text-2xl sm:text-3xl lg:text-4xl text-center lg:leading-10 sm:px-16 md:px-28 lg:px-48 transform scale-0">
                     Ownership of a piece in the of Land here and on the Metaverse
                 </p>
 
                 <div class="images-container md:flex justify-evenly items-center md:mt-10">
-                    <div class="image-two mt-3 sm:mt-5 sm:flex justify-center">
-                        <img class="w-full sm:w-3/4 md:w-full" src="../assets/images/image 2.png" alt="">
+                    <div class="image-one mt-3 sm:mt-5 sm:flex justify-center overflow-hidden">
+                        <img class="w-full sm:w-3/4 md:w-full transform -translate-y-80" src="../assets/images/image 2.png" alt="">
                     </div>
 
-                    <div class="image-one mt-5 sm:mt-7 sm:flex justify-center">
-                        <img class="w-full sm:w-3/4 md:w-full" src="../assets/images/image 1.png" alt="">
+                    <div class="image-two mt-5 sm:mt-7 sm:flex justify-center overflow-hidden">
+                        <img class="w-full sm:w-3/4 md:w-full transform translate-y-80" src="../assets/images/image 1.png" alt="">
                     </div>
                 </div>
 
-                <p
-                    class="ownwership-of-land-details font-graphik-light text-gray-300 text-xs sm:text-sm text-center tracking-widest px-5 sm:px-14 mt-5 sm:mt-10">
+                <p class="ownwership-of-land-details font-graphik-light text-gray-300 text-xs sm:text-sm text-center tracking-widest px-5 sm:px-14 mt-5 sm:mt-10">
                     SolEstate will be collections of certificates NFTs that serve as "ART" and connect the holder to
                     real land ownership in
                     the physical and metaverse. Each NFT represents 1/10000 ownership of resorts, hotels, and gold
@@ -280,7 +312,8 @@
 
             <!-- For big screens -->
             <div class="ownership-of-land-container hidden lg:block">
-                <p class="ownership-of-land-header-text font-graphik-light text-white text-2xl sm:text-3xl lg:text-4xl xl:text-5xl text-center lg:leading-10 xl:leading-tight sm:px-16 md:px-28 lg:px-48 xl:px-60">
+                <p
+                    class="ownership-of-land-header-text font-graphik-light text-white text-2xl sm:text-3xl lg:text-4xl xl:text-5xl text-center lg:leading-10 xl:leading-tight sm:px-16 md:px-28 lg:px-48 xl:px-60">
                     Ownership of a piece in the of Land here and on the Metaverse
                 </p>
 
@@ -289,17 +322,20 @@
                         <div class="image-two flex justify-center w-full">
                             <img class="w-full" src="../assets/images/image 2.png" alt="">
                         </div>
-    
+
                         <div class="image-one flex justify-center w-full">
                             <img class="w-10/12" src="../assets/images/image 1.png" alt="">
                         </div>
                     </div>
 
                     <div class="text-container w-full">
-                        <p class="ownwership-of-land-details font-graphik-light text-gray-300 text-sm xl:text-lg text-left tracking-widest leading-7 xl:leading-loose">
-                            SolEstate will be collections of certificates NFTs that serve as "ART" and connect the holder to
+                        <p
+                            class="ownwership-of-land-details font-graphik-light text-gray-300 text-sm xl:text-lg text-left tracking-widest leading-7 xl:leading-loose">
+                            SolEstate will be collections of certificates NFTs that serve as "ART" and connect the
+                            holder to
                             real land ownership in
-                            the physical and metaverse. Each NFT represents 1/10000 ownership of resorts, hotels, and gold
+                            the physical and metaverse. Each NFT represents 1/10000 ownership of resorts, hotels, and
+                            gold
                             mines. In other words,
                             each NFT in the collection will represent 1/10000th of a share in the ownership of each
                             revenue-generating property.
@@ -318,9 +354,11 @@
                 </p>
 
                 <!-- For big screens -->
-                <p class="join-us-text hidden sm:block font-graphik-light text-gray-400 text-3xl sm:text-lg3xl md:text-4xl lg:text-5xl xl:text-6xl leading-10 lg:leading-normal">
+                <p
+                    class="join-us-text hidden sm:block font-graphik-light text-gray-400 text-3xl sm:text-lg3xl md:text-4xl lg:text-5xl xl:text-6xl leading-10 lg:leading-normal">
                     It’s nothing like the projects you have seen before We have changed the narative. <a
-                        class="text-purple-800 underline hover:text-purple-500 transition duration-700" href="#">Join us now</a>
+                        class="text-purple-800 underline hover:text-purple-500 transition duration-700" href="#">Join us
+                        now</a>
                 </p>
             </div>
         </section>
@@ -330,7 +368,7 @@
                 <div class="footer-icons flex justify-between w-2/3 sm:w-1/3 lg:w-1/5 items-center">
                     <div class="solana">
                         <a href="#" target="blank" title="Solana">
-                            <svg class="lg:w-6" width="30" height="30" viewBox="0 0 30 30" fill="none"
+                            <svg class="lg:w-6 transform scale-0" width="30" height="30" viewBox="0 0 30 30" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <circle cx="15" cy="15" r="15" fill="#101225" />
                                 <path
@@ -346,7 +384,7 @@
                         </a>
                     </div>
 
-                    <div class="discord">
+                    <div class="discord transform scale-0">
                         <div class="h-7 w-7 lg:w-6 lg:h-6 rounded-full bg-dark flex justify-center">
                             <a href="#" target="blank" title="Discord">
                                 <i class="fab fa-discord text-light text-sm lg:text-tiny"></i>
@@ -356,7 +394,7 @@
 
                     <div class="telegram">
                         <a href="#" target="blank" title="Telegram">
-                            <svg class="lg:w-6" width="30" height="30" viewBox="0 0 30 30" fill="none"
+                            <svg class="lg:w-6 transform scale-0" width="30" height="30" viewBox="0 0 30 30" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <circle cx="15" cy="15" r="15" fill="#101225" />
                                 <path
@@ -368,7 +406,7 @@
 
                     <div class="twitter">
                         <a href="#" target="blank" title="Twitter">
-                            <svg class="lg:w-6" width="30" height="30" viewBox="0 0 30 30" fill="none"
+                            <svg class="lg:w-6 transform scale-0" width="30" height="30" viewBox="0 0 30 30" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <circle cx="15" cy="15" r="15" fill="#101225" />
                                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -380,7 +418,7 @@
 
                     <div class="youtube">
                         <a href="#" target="blank" title="Youtube">
-                            <svg class="lg:w-6" width="30" height="30" viewBox="0 0 30 30" fill="none"
+                            <svg class="lg:w-6 transform scale-0" width="30" height="30" viewBox="0 0 30 30" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <circle cx="15" cy="15" r="15" fill="#101225" />
                                 <path
@@ -394,6 +432,8 @@
         </footer>
     </div>
 
+    <script src="./js/nav.js"></script>
+    <script type="module" src="./js/animate.js"></script>
     <script src="https://kit.fontawesome.com/049b369bde.js" crossorigin="anonymous"></script>
 </body>
 

@@ -2,7 +2,6 @@
   "name": "solestate",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
     "dev": "parcel src/index.html",
     "prod": "parcel build src/index.html",
@@ -12,12 +11,13 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "parcel": "^2.0.1",
+    "gsap": "^3.8.0",
     "postcss": "^8.3.11"
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.0.1",
     "autoprefixer": "^10.4.0",
+    "parcel": "^2.0.1",
     "postcss-cli": "^9.0.2",
     "sass": "^1.43.4",
     "tailwindcss": "^2.2.19"

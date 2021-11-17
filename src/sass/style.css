@@ -1,10 +1,10 @@
 .font-graphik {
-  font-family: 'Graphik';
+  font-family: "Graphik";
   font-weight: 400;
 }
 
 .font-graphik-light {
-  font-family: 'Graphik';
+  font-family: "Graphik";
   font-weight: 200;
 }
 
@@ -13,10 +13,36 @@
 }
 
 .text-light {
-  color: #7895FF;
+  color: #7895ff;
 }
 
 .w-7-10 {
   width: 66%;
+}
+
+.hero .hero-container .hero-left-container .hero-header-container .hero-header {
+  transform: translateY(30vh);
+  -webkit-transform: translateY(30vh);
+  -moz-transform: translateY(30vh);
+  -ms-transform: translateY(30vh);
+  -o-transform: translateY(30vh);
+}
+
+.hero .hero-container .hero-left-container .hero-details-container .hero-details {
+  transform: translateY(30vh);
+  -webkit-transform: translateY(30vh);
+  -moz-transform: translateY(30vh);
+  -ms-transform: translateY(30vh);
+  -o-transform: translateY(30vh);
+}
+
+.home-nav ::before {
+  content: '';
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  top: 0%;
+  left: 0%;
+  background-color: white;
 }
 /*# sourceMappingURL=style.css.map */

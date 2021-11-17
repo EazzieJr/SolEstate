@@ -3,7 +3,7 @@ module.exports = {
   purge: [
     './src/**/*.html',
     './src/**/*.js',
-    './src/**/*.css'
+    './src/sass/*.css'
   ],
   darkMode: false, // or 'media' or 'class'
   theme: {
@@ -34,6 +34,10 @@ module.exports = {
         sarala: ['Sarala'],
         caudex: ['Caudex'],
         roboto: ['Roboto']
+      },
+      spacing: {
+        "100": "30rem",
+        "104": "32rem"
       },
       backgroundImage: {
         'body-pattern': "url('/assets/images/sole bg.png')",

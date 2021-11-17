@@ -1,21 +1,73 @@
 .font-graphik {
-    font-family: 'Graphik';
-    font-weight: 400;
+  font-family: "Graphik";
+  font-weight: 400;
 }
 
 .font-graphik-light {
-    font-family: 'Graphik';
-    font-weight: 200;
+  font-family: "Graphik";
+  font-weight: 200;
 }
 
 .bg-dark {
-    background-color: #101225;
+  background-color: #101225;
 }
 
 .text-light {
-    color: #7895FF;
+  color: #7895ff;
 }
 
 .w-7-10 {
-    width: 66%;
+  width: 66%;
+}
+
+.hero {
+  .hero-container {
+    .hero-left-container {
+      .hero-header-container {
+        .hero-header {
+          transform: translateY(30vh);
+          -webkit-transform: translateY(30vh);
+          -moz-transform: translateY(30vh);
+          -ms-transform: translateY(30vh);
+          -o-transform: translateY(30vh);
+        }
+      }
+
+      .hero-details-container {
+        .hero-details {
+          transform: translateY(30vh);
+          -webkit-transform: translateY(30vh);
+          -moz-transform: translateY(30vh);
+          -ms-transform: translateY(30vh);
+          -o-transform: translateY(30vh);
+        }
+      }
+    }
+  }
+}
+
+.home-nav ::before{
+  content: '';
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  top: 0%;
+  left: 0%;
+  background-color: white;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #16192C;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #4A5568;
+}
+
+::-webkit-scrollbar-track-piece:vertical:end {
+    background: transparent;
 }
